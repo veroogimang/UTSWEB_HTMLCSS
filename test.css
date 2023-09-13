@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Poppins:wght@600&display=swap");
+
+/* dibagian atas ini @import itu engga harus di tuliskan atau di di tampilkan
+    di atas kenapa ada import tersebut karena ada import font yang saya inginkan
+    itu juga lebih banyak laagi lainya bukan hanya untuk meimport font aja */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    overflow-x: hidden;
+}
+
+/* dibagian ini kenapa tidak ada identitas melainkan * tersebut untuk seluruhnya agar rapih
+dengan comand margin karena margin adalah untuk mengatur jarak elemen HTML dari luar. 
+padding adalah jarak sisi dalam elemen dengan elemen yang ada di dalamnya. 
+box-sizing untuk merubah kalkulasi dalam mengukur lebar element sedangkan overflow-x: hidden; 
+untuk mengatur apa yang terjadi jika ukuran konten melebihi panjang box hanya untuk overflow nya
+saja sedangkan hidden untuk mengirim suatu data dari sebuah halaman ke halaman lain tanpa mengganggu
+bentuk form yang telah ada*/
+
+body {
+    background-image: url("VERO.png");
+    background-repeat: no-repeat;
+}
+
+/* body nama dari identitas tersebut utnuk mengatur di bagian identitas body saja disitu ada comand 
+bagkground-image untuk menambahkan background pada website di bagian body sedangka backaground-repeat: no-repeat; untuk
+untuk tidak menggangu atau menggulanginya di background baru*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: top 0.3s;
+}
+
+/* identitas .navbar disini saya buat mengatur elemen elemen agar elemen tersebut rapih dan meanrik dengan 
+comand position untuk properti yang digunakan untuk menentukan metode pemposisian pada suatu element. 
+z-index untuk mengatur elemen mana yang ada di bagian depan dan belakang, Memungkinkan untuk pengaturan layout,
+ posisi dan tampilan dari suatu konten yang ukurannya belum diketahui atau bernilai dinamis. 
+ justify-content untuk digunakan untuk mensejajarkan item-item diantara flexbox agar container dari flexbox tersebut
+ bisa mendistribusikan ruang kosong yang tersisa untuk membuat animasi pada hover, dimana saat kursor kita arahkan pada 
+elemen yang mempunyai fungsi hover maka elemen tersebut akan secara bertahap berubah gaya. */
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* identitas .logo a untuk mengatur nama logo yang terletak di bagian kiri navbar */
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* identitas .nav-links untuk mengatur letak dan ukuran di navbar dengan list-style: none; untuk menentukan jenis penomoran atau bullet yang digunakan list
+sedangkan none menyembunyikan dan menunjukkan elemen tanpa menghapus dan menciptakan mereka. */
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+/* identitas .nav-links li untuk mengatur text yang berada di navbar dengan comand margin-right untuk memberikan ruang space diluar elemen, bukan didalam elemen  */
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .6s ease-in-out;
+    -webkit-transition:  all .6s ease-in-out;
+}
+
+/* identitas .nav-links li untuk mengatur text yang berada di navbar dengan comand tersebut dan mengaturnya dengan rapi dan meanrik */
+
+.marquee-w {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    margin-top: 420px;
+}
+
+/* identitas .marquee-w ini adalah untuk mengatur position display ukuran dan transform  */
+
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+}
+
+/* identitas .marquee ini masih dengan untuk mengatur ukuran dan text yang akan di jalankan dengan sesuka hati */
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    -webkit-text-stroke: 1px #131313;
+    white-space: nowrap;
+    line-height: 140px;
+    font-size: 60px;
+    animation: marquee 10s linear infinite;
+    text-shadow: 2px 2px 4px #EDEDED;
+}
+
+/* identitas .maquee span untuk mengatur munculnya text dan kecepantan text yang di keluarkan  */
+
+.marquee2 span {
+    animation-delay: 5s;
+}
+
+/* identitas .marquee2 span fugsinya untuk mengatur delay pada text */
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+.helo {
+    position: relative;
+    left: 35%;
+    text-align: left;
+    font-size: 60px;
+    margin-top: 240px;
+    margin-left: 350px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* identitas .helo utnuk mengatur jarak dan font yang idinginkan di bagian isi wesite */
+
+.penjelasan {
+    text-align: center;
+    margin-left: 950px;
+    margin-top: -220px;
+}
+
+/* identitas .penjelasan ini untuk mengatur jarak dan font yang inginkan di bagian isi website */
+
+.about-img {
+    text-align: center;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+    height: 900px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-img img {
+    max-width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 150px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.about-text span {
+    color: #ff6600;
+}
+
+/* dibagian identitas ini semuanya mengatur pada halaman website Tentang saya */
+
+.experience {
+    display: flex;
+    justify-content: center;
+}
+
+.exp {
+    margin: 0 20px;
+}
+
+.exp h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.exp p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* identitas ini masih di halaman tentang saya untuk mengatur font dan ukuran  */
+
+@media (max-width: 768px) {
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .exp {
+        margin: 10px 0;
+    }
+
+    .exp h3 {
+        font-size: 18px;
+    }
+
+    .exp p {
+        font-size: 14px;
+    }
+}
+
+.progress {
+    width: 100%;
+    background-color: #ccc;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #ff6600;
+    transition: width 1s ease;
+}
+
+.layanan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    min-height: 90vh;
+    
+}
+
+.layanan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.layanan-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.layanan-card {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.layanan-card:hover {
+    transform: scale(1.05);
+}
+
+.layanan-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.layanan-card p {
+    font-size: 16px;
+}
+
+.garis{
+    display: flex;
+}
+
+.pengalaman{
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: 70px;
+}
+
+.pengalaman .isi{
+    display: flex;
+}
+
+.pengalaman .isi h3{
+    margin-left: 70px;
+}
+
+hr{
+    width: 400px;
+}
+
+.skill{
+    float: right;
+    width: 50%;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 350px;
+}
+
+.skill .isi{
+    display: flex;
+}
+
+.skill .isi  h3{
+    margin-left: 70px;
+}
+/* identitas ini semua yang menggunakan kata layanayan untuk mengatur semua layanan yang ada pada halaman layanan tersebut */

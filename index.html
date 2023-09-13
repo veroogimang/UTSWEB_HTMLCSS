@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Portofolio | Riveiro Keyla Ega Pradana</title>
+</head>
+
+<!-- Sebelum kita memulai harus pada html kita harus menuliskan kode DOCTYPE 
+     atau bisa juga dengan shorcut ! tab untuk memberitahu peramban (browser) 
+     bahwa kode yang akan dijalankan adalah kode bahasa markup. -->
+
+<!-- kita juga harus memulai menuliskan perintah pada html di bawah body karena
+     body adalah Body merupakan bagian tubuh atau isi dari sebuah dokumen HTML. -->
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Riveiro Keyla Ega Pradana </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sebelum membuat website yang akan di biasanya aku menambahkan terlebih dahulu 
+        komen atau perintah nav, nav atau navigasi itu sendiri adalah dibuat untuk memperenstasikan 
+        link navigasi, yang biasanya di gunakan sebagai menu yang berisi link link dan bersifat umum
+        pada suatu website misalkan beranda, tentang saya dan layanan. sesudah memanggil comand nav
+        tersebut langsung di beri class untuk apa class di panggil untuk memberikan identitas pada 
+        elemen tersebut agar mudah diakses dan dimodifikasi oleh CSS. di lanjutkan dengan menambahkan 
+        elemen elemen yang akan di munculkan di bagian navbar dengan comand Ul (Unordered List) merupakan 
+        tag list tidak beraturan yang berfungsi untuk mengurutkan suatu list dengan urutan berupa 
+        karakter spesial atau dengan simbol pada HTML di lanjutkan agar text beraturan kita harus
+        menambahkan comand li  untuk menampilkan data secara berurutan ke bawah.-->
+
+    <div class="helo">
+        <h1>Hello<span style="color: red">.</span></h1>
+        <h1>I am</h1>
+        <h1>Veroo</h1>
+    </div>
+
+    <!-- Setelah membuat navbar saya membuat isi yang saya inginkan dengan comand div untuk mengelompokan 
+        elemen atau menjadi satu grup dengan class helo class itu untuk memberikan identitas agar mudah di 
+        akses dan dimodifikasi di css -->
+
+    <div class="penjelasan">
+        <p>
+            "Setiap langkah kecil yang kita ambil hari ini <br />
+            adalah investasi untuk masa depan yang lebih baik. <br />
+            Masa depan adalah hadiah terbesar yang <br />
+            dapat kita berikan kepada diri kita sendiri."
+        </p>
+    </div>
+
+    <!-- Masih sama dengan penjelasan sebelumnya sebelum kita menambahkan comand comand yang diinginkan maka
+         akan dituliskan comand div dan class, setelah itu saya ingin membuat paragfar dengan comand <p> isi paragraf</p> -->
+
+    <div class="marquee-w">
+        <div class="marquee">
+            <span>
+                RIVEIRO KEYLA EGA PRADANA | SMK TELKOM
+                PURWOKERTO&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="marquee marquee2" scrollamount="2">
+            <span>
+                RIVEIRO KEYLA EGA PRADANA | SMK TELKOM
+                PURWOKERTO&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- Marquee untuk membuat tulisan atau teks yang kamu tentukan bisa bergerak di sebuah website kenapa harus menggunakan 
+         span bukan h1/paragraf karena span menambahkan gaya ke konten website -->
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="aku .jpg" alt="Foto Saya" />
+            </div>
+            
+<!-- selanjutnya ingin menganti halaman baru yang sebelumnya kita buat navbar dengan nama tentang saya memanggil dengan comand <section>
+     untuk mengelompokan setiap entri halaman baru secara terpisah, disini ada grup untuk menambahkan img dengan comand img <img src="aku .jpg" alt="Foto Saya" /> -->
+
+            <div class="about-text">
+                <h2>I am a <span>Riveiro Keyla Ega Pradana</span></h2>
+                <div class="experience">
+                    <div class="exp">
+                        <h3>Design</h3>
+                        <p>6 Bulan</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <h3>Development</h3>
+                        <p>7 Bulan</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <h3>UI/UX</h3>
+                        <p>2 Bulan</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <h3>Design</h3>
+                        <p>12 Years</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- selanjutnya ini dibagian halaman baru yang beranama tentang saya dan ingin menggisinya dengan comand comand yang sudah ada -->
+
+    <section class="layanan" id="layanan">
+        <div class="layanan-container">
+            <h2>Layanan Kami</h2>
+            <div class="layanan-cards">
+                <div class="layanan-card">
+                    <h3>Web Design</h3>
+                    <p>Saya bisa membuka layanan untuk mendesign website anda</p>
+                </div>
+                <div class="layanan-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Saya bisa memberi layanan untuk menentukan Design yang anda impikan</p>
+                </div>
+                <div class="layanan-card">
+                    <h3>Web Development</h3>
+                    <p>Saya bisa memberi layanan untuk Development website anda</p>
+                </div>
+            </div>
+<!-- disini juga adahalaman baru yang bernama layanan dibagian layanan juga saya menambahkan containt yang saya perlukan atau inginkan -->
+            <div class="garis">
+                <div class="pengalaman">
+                    <h2>Pengalaman</h2>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2019-</h4>
+                        <h3>Meraih kejuaraan UI/UX Desainer</h3>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2019-</h4>
+                        <h3>Meraih kejuaraan web developement</h3>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2020-</h4>
+                        <h3>Saya mengikuti lomba web design dan meraih kejuaraan</h3>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2021-</h4>
+                        <h3>Meraih kejuaran coding tercepat</h3>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h2>Skill</h2>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2019-</h4>
+                        <h3>UI/UX</h3>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2019-</h4>
+                        <h3>Desaign</h3>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2019-</h4>
+                        <h3>Webdevelopment</h3>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="isi">
+                        <h4>2019-</h4>
+                        <h3>Mobile App</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- masih dibagian layanan akan menambahkan garis dengan comand hr sedangkan br untuk membuat garis baru  -->
+
+</body>
+
+</html>
